@@ -28,7 +28,7 @@ namespace WpfApp2
         int timer_afk = 1;
         int tik = 1;
         //int n = 1;
-        double sol_1 = 10 + 10 * (10 + point_on_Click * 0.2);//up1
+        double sol_1 = 10+ 10 * (10 + point_on_Click * 0.2);//up1
         double sol_2 = 20 + 10 * (30 + point_on_Click * 0.2);//up2
         double sol_3 = 25 + 10 * (30 + point_on_Click * 0.2);//up2
         double sol_4 = 30 + 10 * (30 + point_on_Click * 0.2);//up2
@@ -36,6 +36,8 @@ namespace WpfApp2
         double sol_6 = 40 + 10 * (30 + point_on_Click * 0.2);//up2
         double sol_7 = 45 + 10 * (30 + point_on_Click * 0.2);//up2
         double sol_8 = 50 + 10 * (30 + point_on_Click * 0.2);//up2
+        double sol_9 = 10 + 5 + (point_on_Click * 0.3);//up2
+        double sol_10 = 30 + 5 + (point_on_Click * 0.3);//up2
         double afk_1 = 50; //+ point_on_Click * 0.3);
 
 
@@ -194,6 +196,49 @@ namespace WpfApp2
             {
                 point -= Convert.ToInt64(Math.Round(sol_1));
                 point_on_Click += 200;
+                Update();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Malo");
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            point += point_on_Click;
+            Update();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            if (point >= (sol_9))
+            {
+                point -= Convert.ToInt64(Math.Round(sol_1));
+                point_on_Click += 5;
+                Update();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Malo");
+            }
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            if (point >= (sol_10))
+            {
+                point -= Convert.ToInt64(Math.Round(sol_1));
+                point_on_Click += 10;
                 Update();
 
 

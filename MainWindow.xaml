@@ -17,7 +17,10 @@
                     <Label x:Name="pnt" Content="0" HorizontalAlignment="Left" Margin="239,57,0,0" VerticalAlignment="Top" Height="35" Width="234" Grid.Column="1"/>
                     <Label x:Name="Points_per_Click" Content="Label" HorizontalAlignment="Left" Margin="239,97,0,0" VerticalAlignment="Top" Height="35" Width="212" Grid.Column="1"/>
                     <Image HorizontalAlignment="Left" Height="227" Margin="40,161,0,0" VerticalAlignment="Top" Width="484" Source="img/maxresdefault.jpg" MouseDown="Image_MouseDown" Stretch="Fill" Grid.Column="1"/>
-                    <Image HorizontalAlignment="Left" Height="258" Margin="20,130,0,0" VerticalAlignment="Top" Width="186" Source="img/5049c5c91e9e05904a350c0eb6a5603d06080205r1-648-478v2_uhq.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="258" Margin="20,130,0,0" VerticalAlignment="Top" Width="186" Source="img/5049c5c91e9e05904a350c0eb6a5603d06080205r1-648-478v2_uhq.jpg" Stretch="Fill" MouseDown="Image_MouseDown_1"/>
+                    <Button Content="Выход" HorizontalAlignment="Left" Height="35" Margin="41,57,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_2"/>
+                    <Button Content="Ярик водила" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="50,46,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_4"/>
+                    <Button Content="Кчау" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="421,46,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_5"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Shop" Margin="-2,-2,2,0">
@@ -47,7 +50,7 @@
                     <Label x:Name="Lb1_bt1_Copy" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="56,140,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
                 </Grid>
             </TabItem>
-            <Image Height="100" Width="100"/>
+           
 
         </TabControl>
 
